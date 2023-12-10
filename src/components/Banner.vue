@@ -43,6 +43,6 @@
 
   h2 {
     color: salmon;
-    margin: 0 10px 0 0;
+    margin: 0 0 0 0;
   }
 </style>
