@@ -1,0 +1,11 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif
+}
+
+body {
+  background-color: cadetblue;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
