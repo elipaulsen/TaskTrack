@@ -1,4 +1,3 @@
-
 <template>
   <div class="banner">
     <h1>TASKS</h1>
@@ -10,7 +9,6 @@
   const date = new Date().toLocaleDateString();
 
   export default {
-
     data() {
       return {
         date
@@ -23,7 +21,6 @@
         this.date = new Date().toLocaleDateString();
       }, 60000);
     }
-
   };
 </script>
 
