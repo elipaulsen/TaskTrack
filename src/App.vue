@@ -1,11 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import Banner from './components/Banner.vue';
+  import Banner from './components/Banner.vue';
 </script>
 
 <template>
   <main>
     <Banner/>
+    <router-view></router-view>
   </main>
 </template>
 

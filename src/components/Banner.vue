@@ -2,6 +2,11 @@
   <div class="banner">
     <h1>TASKS</h1>
     <h2>{{ date }}</h2>
+
+    <div class="router">
+      <router-link to="/Day">Day</router-link>
+      <router-link to="/Week">Week</router-link>
+    </div>
   </div>
 </template>
 
@@ -32,6 +37,12 @@
     width: 1000px;
   }
 
+  .router {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    padding: 10px;
+  }
+
   h1 {
     color: salmon;
     font-size: 100px;
@@ -41,5 +52,9 @@
   h2 {
     color: salmon;
     margin: 0 0 0 0;
+  }
+
+  router-link {
+    color: white;
   }
 </style>
