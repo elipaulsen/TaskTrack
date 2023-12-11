@@ -1,11 +1,12 @@
 <script setup>
   import Banner from './components/Banner.vue';
+  import Task from './components/Task.vue';
 </script>
 
 <template>
   <main>
     <Banner/>
-    <router-view></router-view>
+    <RouterView/>
   </main>
 </template>
 

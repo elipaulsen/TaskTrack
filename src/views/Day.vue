@@ -1,10 +1,10 @@
 <script setup>
-  import Task from '@/components/Task.vue';
+  import TaskList from '@/components/TaskList.vue';
 </script>
 
 <template>
   <div>
     <h1>Day View</h1>
-    <Task/>
+    <TaskList/>
   </div>
 </template>
