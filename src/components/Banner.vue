@@ -2,11 +2,6 @@
   <div class="banner">
     <h1>TASKS</h1>
     <h2>{{ date }}</h2>
-
-    <div class="router">
-      <router-link to="/Day">Day</router-link>
-      <router-link to="/Week">Week</router-link>
-    </div>
   </div>
 </template>
 
@@ -31,9 +26,12 @@
 
 <style scoped>
   .banner {
-    background-color: rgb(31, 58, 59);
+    background-color: rgb(35, 35, 35);
     text-align: center;
     border-radius: 0 0 100px 100px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: lime;
     width: 1000px;
   }
 
@@ -44,17 +42,13 @@
   }
 
   h1 {
-    color: salmon;
+    color: lime;
     font-size: 100px;
     margin: 0 0 0 0;
   }
 
   h2 {
-    color: salmon;
+    color: lightgrey;
     margin: 0 0 0 0;
-  }
-
-  router-link {
-    color: white;
   }
 </style>

@@ -6,7 +6,7 @@
 <template>
   <main>
     <Banner/>
-    <RouterView/>
+    <Task/>
   </main>
 </template>
 
