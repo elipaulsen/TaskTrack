@@ -7,6 +7,7 @@
   <main>
     <Banner/>
     <Task/>
+    <Task/>
   </main>
 </template>
 
