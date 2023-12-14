@@ -1,20 +1,16 @@
 <template>
   <v-list-item>
-    <v-card class="taskcard" :class="{completed:task.cmp}" @mouseenter="hover" @mouseleave="nhover" :elevation="cardElevation" shaped :disabled="task.cmp" >
+    <v-card class="taskcard" :class="{completed:task.cmp}" @mouseenter="hover" @mouseleave="nhover" :elevation="cardElevation" shaped >
       <v-card-title>
         {{ task.name }}
       </v-card-title>
-
-      <v-card-subtitle>
-        {{ task.id }}
-      </v-card-subtitle>
 
       <v-card-text>
         {{ task.details }}
       </v-card-text>
 
       <v-card-actions>
-        <v-btn @click="completeTask(task)" text>
+        <v-btn @click="completeTask(task)" text :disabled="task.cmp">
           Complete
         </v-btn>
         <v-btn @click="removeTask(task)" text color="red">
@@ -60,12 +56,10 @@
 <style scoped>
   .taskcard {
     margin-top: 18px;
-    width: 500px;
+    width: 250px;
   }
 
 .completed {
-    background-color: rgb(150, 208, 145);
-    border-width: 1px;
-    border-color: lime;
+    background-color: rgb(183, 255, 176);
   }
 </style>
