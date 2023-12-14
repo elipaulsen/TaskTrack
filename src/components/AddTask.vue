@@ -7,7 +7,7 @@
     </v-row>
 
     <v-row>
-      <v-col sm="1">
+      <v-col sm="2">
         <v-text-field label="Task Name" v-model="task.name" ></v-text-field>
       </v-col>
 
@@ -16,11 +16,10 @@
       </v-col>
 
       <v-col class="button">
-        <v-btn  @click="createTask">
+        <v-btn @click="createTask">
           <v-icon>fas fa-plus</v-icon>
         </v-btn>
       </v-col>
-
     </v-row>
   </div>
 </template>
@@ -29,24 +28,31 @@
   export default {
     data () {
       return {
-        task: {
-          name: "",
-          details: "",
-        },
+        task: null,
       };
     },
     methods: {
       createTask() {
-        if (this.task.name === "") {
-          console.log('return')
+        if (this.task.name === '' || this.task.details === '') {
+          this.resetTaskObject();
           return;
         }
-        this.$emit("task-added", this.task);
-        console.log('added')
-        this.task.name = "";
-        this.task.details = "";
+        this.$emit('task-added', this.task);
+        this.resetTaskObject();
+      },
+
+      resetTaskObject() {
+        this.task = {
+          name: '',
+          details: '',
+          cmp: false,    //in progress
+          id: new Date(),
+        }
       },
     },
+    created() {
+      this.resetTaskObject();
+    }
   };
 </script>
 
