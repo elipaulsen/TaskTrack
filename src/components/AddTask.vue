@@ -45,7 +45,7 @@
         this.task = {
           name: '',
           details: '',
-          cmp: false,    //in progress
+          cmp: false,
           id: new Date(),
         }
       },
