@@ -1,8 +1,8 @@
 <template>
-  <div class="banner">
-    <h1>TASKS</h1>
-    <h2>{{ date }}</h2>
-  </div>
+  <v-app-bar app class="banner">
+    <h1>Task Track</h1>
+    <h3>{{ date }}</h3>
+  </v-app-bar>
 </template>
 
 <script>
@@ -26,29 +26,16 @@
 
 <style scoped>
   .banner {
-    background-color: rgb(35, 35, 35);
-    text-align: center;
-    border-radius: 0 0 100px 100px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: lime;
-    width: 1000px;
+    background-color: lightcyan !important;
   }
-
-  .router {
+  .banner h1 {
     display: flex;
-    justify-content: space-around; /* Adjust as needed */
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure the content takes up the full width */
   }
 
-  h1 {
-    color: lime;
-    font-size: 100px;
-    margin: 0 0 0 0;
-  }
-
-  h2 {
-    color: lightgrey;
-    margin: 0 0 0 0;
+  .banner h3 {
+    margin-right: 15px;
   }
 </style>
