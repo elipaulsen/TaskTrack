@@ -1,6 +1,6 @@
 <template>
   <v-list-item>
-    <v-card class="taskcard" :class="{completed:task.cmp}" @mouseenter="hover" @mouseleave="nhover" :elevation="cardElevation" shaped >
+    <v-card class="taskcard" :class="{completed:task.cmp}" outlined @mouseenter="hover" @mouseleave="nhover" :elevation="cardElevation" shaped >
       <v-card-title>
         {{ task.name }}
       </v-card-title>
@@ -44,7 +44,7 @@
       },
 
       hover() {
-        this.cardElevation = 24; // Set the elevation value when the mouse enters the card
+        this.cardElevation = 10; // Set the elevation value when the mouse enters the card
       },
       nhover() {
         this.cardElevation = 3;
@@ -55,7 +55,7 @@
 
 <style scoped>
   .taskcard {
-    margin-top: 18px;
+    margin: 2px 100px 2px 100px;
     width: 250px;
   }
 
